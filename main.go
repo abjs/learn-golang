@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"net/http"
+)
 
 func main() {
-	fmt.Println("HTTP Server Start")
+	http.ListenAndServe(":8080", nil)
 }
