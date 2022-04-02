@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/abjs/learn-golang/utils"
+)
 
 func main() {
-	fmt.Print("user Name is :")
-	fmt.Println(userName)
+	fmt.Println(utils.Greeting(userName))
 }
